@@ -16,9 +16,9 @@ export default class PizzaDetails extends Component {
     return (
       <div>
         <table className="table table-striped">
-          {pizzaList.map((item, index) => {
-            return (
-              <tbody>
+          <tbody>
+            {pizzaList.map((item, index) => {
+              return (
                 <tr key={index}>
                   <td>
                     <span>
@@ -33,9 +33,9 @@ export default class PizzaDetails extends Component {
                     <p>{item.pizzaName}</p>
                   </td>
                 </tr>
-              </tbody>
-            );
-          })}
+              );
+            })}
+          </tbody>
         </table>
       </div>
     );
